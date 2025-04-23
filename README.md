@@ -1,6 +1,6 @@
 # The Social Cues 🕺🇸🇪
 
-A branching dialogue Q&A game built in C# and .NET Core, inspired by Swedish social behavior and the "Swedish Dance" webinar.
+A branching dialogue Q&A game built in C# and .NET Core, inspired by Swedish social behavior and "The Swedish Dance" webinar by Amanda Herzog.
 
 ## 🎯 Goal
 
