@@ -24,7 +24,7 @@ jobs:
       run: dotnet restore TheSocialCues.sln
 
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore TheSocialCues.sln
 
     - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal TheSocialCues.sln
