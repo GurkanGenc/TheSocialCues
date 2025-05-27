@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <EnableMSTestRunner>true</EnableMSTestRunner>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
     <!--
       Displays error on console in addition to the log file. Note that this feature comes with a performance impact.
