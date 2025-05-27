@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{02EA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{2A9A7123-D5E6-4917-B50C-E35A5F423618}"
 	ProjectSection(SolutionItems) = preProject
-		tsc.yml = tsc.yml
+		dotnet-ci.yml = dotnet-ci.yml
 	EndProjectSection
 EndProject
 Global
