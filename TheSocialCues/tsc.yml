@@ -1,4 +1,4 @@
-name: tsc
+name: dotnet-ci
 
 on:
   push:
