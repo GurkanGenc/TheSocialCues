@@ -1,4 +1,4 @@
-﻿namespace TheSocialCues.Tests
+﻿namespace TheSocialCues.Core
 {
     public class Guest
     {

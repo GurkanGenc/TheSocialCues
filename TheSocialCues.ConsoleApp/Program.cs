@@ -1,6 +1,6 @@
 ﻿// TheSocialCues.ConsoleApp/Program.cs
 using System;
-using TheSocialCues.Tests;
+using TheSocialCues.Core;
 
 namespace TheSocialCues.ConsoleApp
 {
