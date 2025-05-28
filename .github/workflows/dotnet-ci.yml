@@ -21,10 +21,10 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore TheSocialCues/TheSocialCues.sln
+      run: dotnet restore TheSocialCues.sln
 
     - name: Build
-      run: dotnet build --no-restore TheSocialCues/TheSocialCues.sln
+      run: dotnet build TheSocialCues.sln --no-restore
 
     - name: Run tests
-      run: dotnet test --no-build --verbosity normal TheSocialCues/TheSocialCues.sln
+      run: dotnet test TheSocialCues.sln --no-build --verbosity normal
