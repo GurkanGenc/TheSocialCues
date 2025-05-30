@@ -16,8 +16,24 @@ namespace TheSocialCues.Tests
             // Arrange
             var guest = new Guest("Anna");
             var expected = 1;
+
             // Act
             var actual = guest.CurrentPhase;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Guest_ShouldAdvancePhase()
+        {
+            // Arrange
+            var guest = new Guest("Anna");
+            guest.AdvancePhase(); // Simulate advancing to Phase Two
+            var expected = 2;
+            // Act
+            var actual = guest.CurrentPhase;
+
             // Assert
             Assert.AreEqual(expected, actual);
         }

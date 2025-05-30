@@ -1,4 +1,5 @@
-﻿namespace TheSocialCues.Core
+﻿
+namespace TheSocialCues.Core
 {
     public class Guest
     {
@@ -10,5 +11,10 @@
         }
 
         public int CurrentPhase { get; set; } = 1; // Default to Phase One
+
+        public void AdvancePhase()
+        {
+            CurrentPhase++;
+        }
     }
 }
