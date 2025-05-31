@@ -10,7 +10,7 @@ namespace TheSocialCues.Core
             Name = name;
         }
 
-        public int CurrentPhase { get; set; } = 1; // Default to Phase One
+        public ConnectionLevel CurrentPhase { get; private set; } = ConnectionLevel.Stranger;
 
         public void AdvancePhase()
         {

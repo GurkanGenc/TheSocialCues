@@ -15,7 +15,7 @@ namespace TheSocialCues.Tests
         {
             // Arrange
             var guest = new Guest("Anna");
-            var expected = 1;
+            var expected = ConnectionLevel.Stranger;
 
             // Act
             var actual = guest.CurrentPhase;
@@ -30,7 +30,7 @@ namespace TheSocialCues.Tests
             // Arrange
             var guest = new Guest("Anna");
             guest.AdvancePhase(); // Simulate advancing to Phase Two
-            var expected = 2;
+            var expected = ConnectionLevel.Acquaintance;
             // Act
             var actual = guest.CurrentPhase;
 
