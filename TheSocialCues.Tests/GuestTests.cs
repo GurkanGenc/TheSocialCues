@@ -18,7 +18,7 @@ namespace TheSocialCues.Tests
             var expected = ConnectionLevel.Stranger;
 
             // Act
-            var actual = guest.CurrentPhase;
+            var actual = guest.CurrentLevel;
 
             // Assert
             Assert.AreEqual(expected, actual);
@@ -32,7 +32,25 @@ namespace TheSocialCues.Tests
             guest.AdvancePhase(); // Simulate advancing to Phase Two
             var expected = ConnectionLevel.Acquaintance;
             // Act
-            var actual = guest.CurrentPhase;
+            var actual = guest.CurrentLevel;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Guest_ShouldNotAdvanceBeyondComfortable()
+        {
+            // Arrange
+            var guest = new Guest("Anna");
+            guest.AdvancePhase(); // Phase Two
+            guest.AdvancePhase(); // Phase Three
+            guest.AdvancePhase(); // Phase Four (Comfortable)
+            guest.AdvancePhase(); // Should not advance beyond Comfortable
+            var expected = ConnectionLevel.Comfortable;
+
+            // Act
+            var actual = guest.CurrentLevel;
 
             // Assert
             Assert.AreEqual(expected, actual);

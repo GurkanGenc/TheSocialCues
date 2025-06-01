@@ -10,11 +10,12 @@ namespace TheSocialCues.Core
             Name = name;
         }
 
-        public ConnectionLevel CurrentPhase { get; private set; } = ConnectionLevel.Stranger;
+        public ConnectionLevel CurrentLevel { get; private set; } = ConnectionLevel.Stranger;
 
         public void AdvancePhase()
         {
-            CurrentPhase++;
+            if (CurrentLevel < ConnectionLevel.Comfortable)
+                CurrentLevel++;
         }
     }
 }

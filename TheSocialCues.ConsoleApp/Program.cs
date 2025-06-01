@@ -12,7 +12,7 @@ namespace TheSocialCues.ConsoleApp
             // You can plug the GameEngine here later
             Guest guest = new Guest("Anna");
 
-            Console.WriteLine($"Guest's name is {guest.Name} and the current phase is {guest.CurrentPhase}");
+            Console.WriteLine($"Guest's name is {guest.Name} and the current phase is {guest.CurrentLevel}");
         }
     }
 }
