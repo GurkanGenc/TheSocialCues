@@ -55,5 +55,15 @@ namespace TheSocialCues.Tests
             // Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void ConversationOption_ShouldStoreTextAndImpactCorrectly()
+        {
+            // Arrange
+            var option = new ConversationOption("Hey", 1);
+
+            Assert.AreEqual("Hey", option.Text);
+            Assert.AreEqual(1, option.Impact);
+        }
     }
 }
