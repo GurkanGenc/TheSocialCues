@@ -65,5 +65,15 @@ namespace TheSocialCues.Tests
             Assert.AreEqual("Hey", option.Text);
             Assert.AreEqual(1, option.Impact);
         }
+
+        [TestMethod]
+        public void ConversationOption_ShouldAcceptNegativeImpact()
+        {
+            // Arrange
+            var option = new ConversationOption("Oh no", -1);
+            // Act & Assert
+            Assert.AreEqual("Oh no", option.Text);
+            Assert.AreEqual(-1, option.Impact);
+        }
     }
 }
