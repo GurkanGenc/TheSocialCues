@@ -4,7 +4,7 @@ A branching dialogue Q&A game built in C# and .NET Core, inspired by Swedish soc
 
 ## 🎯 Goal
 
-Navigate four social phases by choosing the right conversation paths. Win over guests, avoid awkward moments, and earn that fika invitation ☕.
+Navigate four social phases by choosing the right conversation paths. Win over guests, avoid awkward moments, and earn that "fika" invitation ☕.
 
 ## 🧱 Tech Stack
 
@@ -18,9 +18,3 @@ Navigate four social phases by choosing the right conversation paths. Win over g
 - `TheSocialCues.Core`: Game logic
 - `TheSocialCues.ConsoleApp`: Console version
 - `TheSocialCues.Tests`: Unit tests (TDD)
-
-## 📦 Getting Started
-
-```bash
-git clone https://github.com/yourusername/TheSocialCues.git
-cd TheSocialCues
