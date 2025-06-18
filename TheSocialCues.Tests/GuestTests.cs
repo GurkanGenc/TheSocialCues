@@ -58,7 +58,8 @@ namespace TheSocialCues.Tests
 
         [TestMethod]
         public void RegressPhase_GuestIsAtHigherLevel_ConnectionLevelDecreases()
-        {   // Arrange
+        {
+            // Arrange
             var guest = new Guest("Anna");
             guest.AdvancePhase(); // Phase Two - Acquaintance
             guest.AdvancePhase(); // Phase Three - Friendly
@@ -70,6 +71,19 @@ namespace TheSocialCues.Tests
 
             // Assert
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void RegressPhase_GuestIsAtLowestLevel_ConnectionLevelRemainsStranger()
+        {
+            // Arrange
+            var guest = new Guest("Anna");
+
+            // Act
+            guest.RegressPhase(); // Attempt to regress from Stranger
+
+            // Assert
+            Assert.AreEqual(ConnectionLevel.Stranger, guest.CurrentLevel); // Should remain at Stranger
         }
     }
 }

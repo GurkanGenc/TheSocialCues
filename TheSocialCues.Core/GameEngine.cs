@@ -15,8 +15,11 @@ namespace TheSocialCues.Core
             {
                 guest.AdvancePhase();
             }
-
-            // Later: Add support for negative or neutral impact if needed
+            else if (option.Impact < 0)
+            {
+                guest.RegressPhase();
+            }
+            // Later: Add support for neutral impact if needed
         }
     }
 }

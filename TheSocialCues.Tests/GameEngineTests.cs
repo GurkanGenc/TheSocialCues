@@ -28,9 +28,12 @@ public class GameEngineTests
         var engine = new GameEngine();
         var player = new Player("TestPlayer");
         var guest = new Guest("TestGuest");
+        guest.AdvancePhase(); // Acquaintance
         var interaction = new ConversationOption("NegativeInteraction", -1);
+
         // Act
         engine.ExecuteInteraction(player, guest, interaction);
+
         // Assert
         Assert.AreEqual(ConnectionLevel.Stranger, guest.CurrentLevel);
     }
