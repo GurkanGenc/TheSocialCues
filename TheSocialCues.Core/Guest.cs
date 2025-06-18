@@ -1,4 +1,5 @@
 ﻿
+
 namespace TheSocialCues.Core
 {
     public class Guest
@@ -16,6 +17,14 @@ namespace TheSocialCues.Core
         {
             if (CurrentLevel < ConnectionLevel.Comfortable)
                 CurrentLevel++;
+        }
+
+        public void RegressPhase()
+        {
+            if (CurrentLevel > ConnectionLevel.Stranger)
+            {
+                CurrentLevel--;
+            }
         }
     }
 }
